@@ -1,0 +1,93 @@
+https://us-central1-sommes-bot.cloudfunctions.net/dialogflowFirebaseFulfillment
+
+English
+"models","modelling","runaway models","fashion models","models"
+"makeup artists","makeup artists","makeup","facial makeup"
+"photography","photography","shoot","wedding photos","photos","baby dedication photos","photoshoot"
+"voice over artist","voice over artist","voice over"
+"locations","locations","video locations","video shooting","video"
+"hair stylist","hair stylist","hair fixing","weavons","braids","hair"
+"DJ","DJ","music dj","disco"
+"equipment rentals","equipment rentals","keyboards","saxophone","piano"
+"MC/Compere","MC/Compere","comedian","comedienne","MC","master of ceremony"
+"fashion stylist","fashion stylist","fashion","dress","gowns","shirts","outfits","wear","ankara","outfit"
+
+Indonesian
+"model","model","pemodelan","model landasan pacu","model busana"
+"penata rias","penata rias","dandan","rias wajah"
+"fotografi","fotografi","foto pernikahan","foto","foto pengabdian bayi","pemotretan"
+"pengisi suara artis","pengisi suara artis","pengisi suara"
+"lokasi","lokasi","lokasi video","perekaman video","video"
+"penata rambut","penata rambut","penata rambut","penenun","kepang","rambut"
+"DJ","DJ","music dj","disco"
+"persewaan peralatan","persewaan peralatan","keyboard","saxophone","piano"
+"MC / Compere","MC / Compere","komedian","comedienne","MC","pembawa acara"
+"penata busana","penata busana","mode","gaun","kemeja","pakaian","memakai"
+
+
+
+[
+    {
+        "responseId": "62dcdbdb-0eff-4c8d-8122-02ceb760f3bd-36cd004f",
+        "queryResult": {
+            "fulfillmentMessages": [
+                {
+                    "platform": "PLATFORM_UNSPECIFIED",
+                    "text": {
+                        "text": [
+                            "Hello! I can book an appointment. You can tell me hair or dress appointment. How can I help you today?"
+                        ]
+                    },
+                    "message": "text"
+                }
+            ],
+            "outputContexts": [],
+            "queryText": "hello",
+            "speechRecognitionConfidence": 0,
+            "action": "input.welcome",
+            "parameters": {
+                "fields": {}
+            },
+            "allRequiredParamsPresent": true,
+            "fulfillmentText": "Hello! I can book an appointment. You can tell me hair or dress appointment. How can I help you today?",
+            "webhookSource": "",
+            "webhookPayload": null,
+            "intent": {
+                "inputContextNames": [],
+                "events": [],
+                "trainingPhrases": [],
+                "outputContexts": [],
+                "parameters": [],
+                "messages": [],
+                "defaultResponsePlatforms": [],
+                "followupIntentInfo": [],
+                "name": "projects/sommes-bot/agent/intents/0304800e-1cbf-444c-8a79-2f5652102d6f",
+                "displayName": "Default Welcome Intent",
+                "priority": 0,
+                "isFallback": false,
+                "webhookState": "WEBHOOK_STATE_UNSPECIFIED",
+                "action": "",
+                "resetContexts": false,
+                "rootFollowupIntentName": "",
+                "parentFollowupIntentName": "",
+                "mlDisabled": false
+            },
+            "intentDetectionConfidence": 1,
+            "diagnosticInfo": null,
+            "languageCode": "en",
+            "sentimentAnalysisResult": null
+        },
+        "webhookStatus": null,
+        "outputAudio": {
+            "type": "Buffer",
+            "data": []
+        },
+        "outputAudioConfig": null
+    },
+    null,
+    null
+]
+
+Machine translation are terrible
+https://www.quora.com/How-does-Amazon-Translate-compare-to-Google-Translate
+
