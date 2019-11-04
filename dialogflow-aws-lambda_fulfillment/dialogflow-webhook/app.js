@@ -24,11 +24,30 @@ function fallback(agent) {
   agent.add(`I'm sorry, can you try again?`);
 }
 function makeAppointment(agent) {
-  agent.add(`I got you all set for your appointment`);
+  let timeZone = 'America/Chicago';
+  let timeZoneOffset = '-05:00';
+  let dateTimeStart = new Date(Date.parse(agent.parameters.date[0].split('T')[0] + 'T' + agent.parameters.time[0].split('T')[1].split('-')[0] + timeZoneOffset));
+  let dateTimeEnd = new Date(new Date(dateTimeStart).setHours(dateTimeStart.getHours() + 1));
+  let appointmentTimeString = dateTimeStart.toLocaleString(
+      'en-US',
+      { month: 'long', day: 'numeric', hour: 'numeric', timeZone: timeZone }
+    );
+
+  agent.add(`I got you all set for your ${agent.parameters.AppointmentType} appointment on ${appointmentTimeString}`);
 }
+
 function makeAppointmentId(agent) {
-  agent.add(`Saya siap untuk janji Anda`);
+  let timeZone = 'Asia/Jakarta';
+  let timeZoneOffset = '+07:00';
+  let dateTimeStart = new Date(Date.parse(agent.parameters.date[0].split('T')[0] + 'T' + agent.parameters.time[0].split('T')[1].split('-')[0] + timeZoneOffset));
+  let dateTimeEnd = new Date(new Date(dateTimeStart).setHours(dateTimeStart.getHours() + 1));
+  let appointmentTimeString = dateTimeStart.toLocaleString(
+      'id',
+      { month: 'long', day: 'numeric', hour: 'numeric', timeZone: timeZone }
+    );
+  agent.add(`Saya membuat Anda siap untuk janji temu ${agent.parameters.AppointmentType} Anda di ${appointmentTimeString}`);
 }
+
 function fallbackLanguage(agent) {
   agent.add(
     `I didn't understand the text, you start with 'hello' for English or Indonesian - halo yang di sana`
