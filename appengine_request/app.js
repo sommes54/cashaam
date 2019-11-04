@@ -71,6 +71,7 @@ async function runSample(msg) {
 
 app.post("/", (req, res) => {
   const message = req.body;
+  //send the message using the Twilio handle
   const twiml = new MessagingReponse();
   runSample(message)
     .then(result => {
