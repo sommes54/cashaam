@@ -2,7 +2,7 @@
 The user interact with our platform from their phone WhatsApp by sending text messages to the WhatsApp number. When a user start typing a message, the language they are using is determined and used to set a language code for Dialogflow. Dialogflow integrate with Google AppEngine and Amazon AWS API Gateway - Lambda. ![Architecture](https://github.com/sommes54/cashaam/blob/master/architecture.png)
 
 # Request - (Dialogflow, AppEngine, Twilio)
-The Twilio is connected with API hosted on Google AppEngine. Request from user's WhatsApp is handled by the API using the Dialogflow backend. Response (fulfillment) from the user is obtained for the user with the help of Dialogflow integration with the Amazon AWS Lambda
+The Twilio is connected with API hosted on Google AppEngine. Request from user's WhatsApp is handled by the API using the Dialogflow backend. Response (fulfillment) from the user is obtained for the user with the help of Dialogflow integration with the Amazon AWS Lambda. ![Request - Intent](https://github.com/sommes54/cashaam/blob/master/response_appengine.png)
 
 # Fulfillment - (Dialogflow, Amazon AWS API Gateway, Amazon AWS lambda)
 Dialogflow is connected to the API Gateway which responds using AWS lambda. AWS Lambda is also used to provide Authorization in order to secure the API. Additional tasks such image recognition and analysis and so on can be performed by invoking more commands or lambdas. Dialogflow integrate with Amazon AWS API Gateway powered by AWS Lambda. The integration is based on a tutorial by [Latt](https://medium.com/faun/building-chatbot-with-google-dialogflow-with-aws-lambda-e19872e1589)
