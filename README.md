@@ -9,4 +9,4 @@ Dialogflow is connected to the API Gateway which responds using AWS lambda. AWS 
 ![Dialogflow works with API Gateway](https://github.com/sommes54/cashaam/blob/master/dialogflow-aws-lambda.png)
 
 # Language Detection
-The language used to typed the message is used to select the agent intent language code. This is a better method rather than translation because it will require shorter time to respond and help train the chat bot in the native language of the user (locale). Language detection using Google Cloud Translation API require a reasonable amount of text so it could be an issue for a user.![Translation Issues](https://www.quora.com/How-does-Amazon-Translate-compare-to-Google-Translate)
+The language used to typed the message is used to select the agent intent language code. This is a better method rather than translation because it will require shorter time to respond and help train the chat bot in the native language of the user (locale). Language detection using Google Cloud Translation API require a reasonable amount of text so it could be an issue for a user. [Translation Issues](https://www.quora.com/How-does-Amazon-Translate-compare-to-Google-Translate)
