@@ -91,3 +91,17 @@ Indonesian
 Machine translation are terrible
 https://www.quora.com/How-does-Amazon-Translate-compare-to-Google-Translate
 
+Id fulfillmentText
+Luar biasa! Anda siap untuk $date pada $time untuk $AppointmentType. Sampai jumpa!
+
+agent={"parameters": {
+      "AppointmentType": [
+        "hair stylist"
+      ],
+      "time": [
+        "2019-11-04T22:00:00-06:00"
+      ],
+      "date": [
+        "2019-11-05T12:00:00-06:00"
+      ]
+    }}
